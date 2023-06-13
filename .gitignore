@@ -1,0 +1,21 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Django stuff:
+*.log
+local_settings.py
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Environments
+venv/
+fixtures/
+media/
+.idea/
+my_shop_cache/
+*.env*
