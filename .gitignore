@@ -19,3 +19,6 @@ media/
 .idea/
 my_shop_cache/
 *.env*
+*.bak
+*.dat
+*.dir

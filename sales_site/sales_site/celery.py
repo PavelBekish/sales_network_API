@@ -13,7 +13,7 @@ app.autodiscover_tasks()
 app.conf.beat_schedule = {
     'increase-debt-every-30-minutes': {
         'task': 'sales_network.tasks.increase_debt',
-        'schedule': crontab(minute='*/30'),
+        'schedule': crontab(minute='*/1'),
     },
     'reduce-debt-every-day': {
         'task': 'sales_network.tasks.reduce_debt',

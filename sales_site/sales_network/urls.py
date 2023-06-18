@@ -11,6 +11,7 @@ urlpatterns = [
     path('create_product/', views.ProductAPICreate.as_view()),
     path('delete_product/<int:pk>/', views.ProductAPI.as_view()),
     path('update_product/<int:pk>/', views.ProductAPI.as_view()),
+    path('contacts/', views.ContactsAPI.as_view()),
     path('drf-auth/', include('rest_framework.urls')),
     path('auth/', include('djoser.urls')),
 ]
