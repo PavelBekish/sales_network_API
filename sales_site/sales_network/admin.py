@@ -25,7 +25,7 @@ class SalesNetworkObjectAdmin(DjangoMpttAdmin):
     list_display = ['name', 'contacts', 'parent', 'debt', 'created']
     list_filter = ['contacts__address__city']
     raw_id_fields = ('parent',)
-    actions = ['clear_debts']
+    actions = ['clean_debts']
 
     @admin.action(description='Clear Debt')
     def clear_debts(self, request, qs: QuerySet):

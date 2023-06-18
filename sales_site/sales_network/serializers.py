@@ -13,8 +13,6 @@ class EmployeesSerializer(serializers.ModelSerializer):
 
 
 class ProductSerializer(serializers.ModelSerializer):
-    name = serializers.CharField(max_length=25)
-
     class Meta:
         model = Product
         fields = ['id', 'name', 'model', 'release_date']
@@ -84,7 +82,6 @@ class StatisticsSerializer(serializers.ModelSerializer):
 
 
 class NetworkObjectCreateSerializer(serializers.ModelSerializer):
-    name = serializers.CharField(max_length=50)
     contacts = ContactSerializer(read_only=False)
 
     class Meta:
